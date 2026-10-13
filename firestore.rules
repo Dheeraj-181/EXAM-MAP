@@ -1,0 +1,30 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow logged-in users to access their own records
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    match /subjects/{subjectId} {
+      allow read, write: if request.auth != null && (resource == null || resource.data.userId == request.auth.uid) && request.resource.data.userId == request.auth.uid;
+    }
+
+    match /topics/{topicId} {
+      allow read, write: if request.auth != null && (resource == null || resource.data.userId == request.auth.uid) && request.resource.data.userId == request.auth.uid;
+    }
+
+    match /studyPlans/{planId} {
+      allow read, write: if request.auth != null && (resource == null || resource.data.userId == request.auth.uid) && request.resource.data.userId == request.auth.uid;
+    }
+
+    match /exams/{examId} {
+      allow read, write: if request.auth != null && (resource == null || resource.data.userId == request.auth.uid) && request.resource.data.userId == request.auth.uid;
+    }
+    
+    // For quick development/testing, you can also use:
+    // match /{document=**} {
+    //   allow read, write: if request.auth != null;
+    // }
+  }
+}

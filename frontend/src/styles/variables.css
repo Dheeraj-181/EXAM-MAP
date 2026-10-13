@@ -1,0 +1,54 @@
+:root {
+  /* Brand Color Palette */
+  --color-bg: #F7F8FC;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F9FAFD;
+  --color-primary: #6558F5;
+  --color-primary-hover: #5244E3;
+  --color-primary-light: #ECEBFE;
+  --color-secondary: #35B8A6;
+  --color-secondary-hover: #2DA191;
+  --color-secondary-light: #E3F8F5;
+  --color-text-main: #20243A;
+  --color-text-muted: #737B91;
+  --color-text-light: #9EA6BC;
+  --color-border: #E7E9F2;
+  --color-border-hover: #D4D8E6;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-success-light: #EAFBF3;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FEF6E8;
+  --color-danger: #EF4444;
+  --color-danger-light: #FEEEEE;
+  --color-info: #3B82F6;
+  --color-info-light: #EBF4FE;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-sm: 0 2px 6px rgba(32, 36, 58, 0.04), 0 1px 2px rgba(32, 36, 58, 0.02);
+  --shadow-md: 0 6px 16px -2px rgba(32, 36, 58, 0.06), 0 2px 6px -1px rgba(32, 36, 58, 0.03);
+  --shadow-lg: 0 12px 28px -4px rgba(32, 36, 58, 0.08), 0 4px 10px -2px rgba(32, 36, 58, 0.04);
+  --shadow-focus: 0 0 0 3px rgba(101, 88, 245, 0.2);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout dimensions */
+  --sidebar-width: 260px;
+  --header-height: 70px;
+}

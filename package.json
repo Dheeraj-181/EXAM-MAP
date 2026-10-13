@@ -1,0 +1,13 @@
+{
+  "name": "exammap-root",
+  "version": "1.0.0",
+  "description": "ExamMap — Smart Study Planner & Exam Preparation Tracker",
+  "scripts": {
+    "backend": "cd backend && node server.js",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["exammap", "study-planner", "syllabus-tracker", "react", "express", "mongodb"],
+  "author": "ExamMap Development Team",
+  "license": "MIT"
+}
