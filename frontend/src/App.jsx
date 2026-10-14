@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ToastProvider } from './context/ToastContext';
 import ProtectedRoute from './routes/ProtectedRoute';
@@ -26,7 +26,7 @@ function App() {
   return (
     <ToastProvider>
       <AuthProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             {/* Public Pages */}
             <Route path="/" element={<LandingPage />} />
@@ -54,7 +54,7 @@ function App() {
             {/* 404 Fallback */}
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </AuthProvider>
     </ToastProvider>
   );
